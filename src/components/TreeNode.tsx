@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 interface TreeNodeProps {
   node: {
@@ -8,14 +8,21 @@ interface TreeNodeProps {
 }
 
 const TreeNode: React.FC<TreeNodeProps> = ({ node }) => {
+  const [expanded, setexpanded] = useState(true);
   if (!node) {
     return null;
   }
 
+  const handleExpand = () => {
+    setexpanded(!expanded);
+  };
+
   return (
     <li>
+      <button onClick={handleExpand}>\/</button>
       {node.spanId}
-      {node.children.length > 0 && (
+
+      {expanded && node.children.length > 0 && (
         <ul>
           {node.children.map((child) => (
             <TreeNode key={child.spanId} node={child} />

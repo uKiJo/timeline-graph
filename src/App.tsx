@@ -12,11 +12,3 @@ export default function App() {
     </div>
   );
 }
-
-// const formatedData = data.map((d) => {
-//   return {
-//     duration: d.duration,
-//     start: d.startTime,
-//     operation: d.operationName,
-//   };
-// });
