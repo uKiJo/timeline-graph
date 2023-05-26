@@ -1,5 +1,6 @@
 import React from "react";
 import TreeNode from "./TreeNode";
+import "./Tree.scss";
 
 interface TreeProps {
   tree: any;
@@ -7,11 +8,11 @@ interface TreeProps {
 
 const Tree: React.FC<TreeProps> = ({ tree }) => {
   return (
-    <ul>
+    <div className="tree-container">
       {tree.map((node: any) => (
         <TreeNode key={node.spanId} node={node} />
       ))}
-    </ul>
+    </div>
   );
 };
 
