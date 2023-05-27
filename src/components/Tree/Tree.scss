@@ -1,0 +1,16 @@
+.tree-container {
+  border: 1px solid rgb(213, 215, 224);
+  padding: 24px;
+  list-style: none;
+  // list-style: none;
+
+  .axis {
+    position: relative;
+    margin-left: 300px;
+    top: 0;
+
+    .axis-point {
+      position: absolute;
+    }
+  }
+}
