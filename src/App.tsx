@@ -1,4 +1,3 @@
-import React from "react";
 import { data } from "./data/dataset.ts";
 import Tree from "./components/Tree/Tree.tsx";
 import { buildTree } from "./utils/utils.ts";
