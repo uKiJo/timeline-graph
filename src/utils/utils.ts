@@ -17,6 +17,10 @@ export function buildTree(
         "aspecto.calc.class": item.attrs["aspecto.calc.class"],
         "db.system": item.attrs["db.system"],
         "messaging.system": item.attrs["messaging.system"],
+        "host.name": item.attrs["host.name"],
+        "http.route": item.attrs["http.route"],
+        "http.path": item.attrs["http.path"],
+        "http.method": item.attrs["http.method"],
       },
     }));
 
